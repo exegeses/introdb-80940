@@ -7,7 +7,7 @@
 > Curso de Introducción a las Bases de datos |      
 > Lunes y Jueves de 10hs a 12hs (Arg) |      
 > 9 clases |      
-> Desde 23/10/2025 hasta 27/11/2025 |     
+> Desde 23/10/2025 hasta 20/11/2025 |     
 > Código 80940 |    
 > sensei: Marcos Pinardi |  
 
