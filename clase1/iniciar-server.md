@@ -38,3 +38,9 @@
 
 ## macOS
 
+> En macOS vamos a ir a la Configuración del Sistema
+
+1. ir a Configuración del Sistema
+2. En el panel lateral izquierdo ir hacia abajo de todo
+3. Ahí encontraremos el servicio MySQL
+4. En la parte central tenemos las opciones para iniciar y detener
