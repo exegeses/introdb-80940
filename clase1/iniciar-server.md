@@ -24,7 +24,7 @@
 
 > para detenerlo: 
 
-    systemctl start mysql
+    systemctl stop mysql
 
 > para reiniciarlo:
 
