@@ -18,3 +18,6 @@ CREATE TABLE proveedores (
      email VARCHAR(75) NOT NULL,
      direccion VARCHAR(200) NOT NULL
 );
+/* corrección */
+ALTER TABLE proveedores
+    MODIFY idProveedor tinyint unsigned auto_increment;
