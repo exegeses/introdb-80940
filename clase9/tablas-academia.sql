@@ -1,0 +1,41 @@
+CREATE TABLE areas
+    (
+        idArea TINYINT UNSIGNED NOT NULL PRIMARY KEY AUTO_iNCREMENT,
+        area VARCHAR(60) NOT NULL UNIQUE
+    );
+
+CREATE TABLE niveles
+(
+    idNivel TINYINT UNSIGNED NOT NULL PRIMARY KEY AUTO_iNCREMENT,
+    nivel VARCHAR(60) NOT NULL UNIQUE
+);
+
+
+CREATE TABLE cursos
+(
+    idCurso TINYINT UNSIGNED NOT NULL PRIMARY KEY AUTO_iNCREMENT,
+    curso VARCHAR(60) NOT NULL,
+    matricula DECIMAL(10,2) UNSIGNED NOT NULL,
+    idArea TINYINT UNSIGNED NOT NULL,
+    idNivel TINYINT UNSIGNED NOT NULL,
+    FOREIGN KEY (idArea) REFERENCES areas (idArea),
+    FOREIGN KEY (idNivel) REFERENCES niveles (idNivel)
+);
+
+CREATE TABLE alumnos
+(
+    idAlumno SMALLINT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(60) NOT NULL,
+    apellido VARCHAR(60) NOT NULL,
+    email VARCHAR(60) NOT NULL
+);
+
+CREATE TABLE cursos_alumnos
+(
+    idCurso TINYINT UNSIGNED NOT NULL,
+    idAlumno SMALLINT UNSIGNED NOT NULL,
+    fechaAlta DATE NOT NULL,
+    activo BOOLEAN NOT NULL,
+    foreign key (idCurso) references cursos (idCurso),
+    FOREIGN KEY (idAlumno) REFERENCES alumnos (idAlumno)
+);
